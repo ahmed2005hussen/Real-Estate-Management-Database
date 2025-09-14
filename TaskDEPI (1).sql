@@ -39,8 +39,6 @@ foreign key (ownerID) references owner(ownerID),
 foreign key (propID) references Property(propID)
 ); 
 
-
-
 create table WorksIn(
 officeID int not null,
 empID int not null , 
@@ -57,8 +55,6 @@ primary key(officeID , empID),
 foreign key (officeID) references Office(officeID),
 foreign key (empID) references Employee(empID)
 );
-
-
 
 insert into office(location)
 values
